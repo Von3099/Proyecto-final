@@ -313,8 +313,13 @@ public class FormularioCuestionario extends javax.swing.JFrame {
         c.setPreguntas(preguntas);
         //Ajustamos el titulo de la primera pregunta
           mostrarPregunta (preguntaActual);  
-//Primero ajustamos el titulo de la primer pregunta en la etiqueta de la preunta
-
+//Primero ajustamos el titulo de la primer pregunta en la etiqueta de la pregunta
+try{
+    int opcion= Integer.parseInt (etiquetaRespuesta.getText());
+    ValidarNumeroPreguntas.validar (opcion);
+    }catch (NumberFormatException e) {
+   
+}
      
     }
          
