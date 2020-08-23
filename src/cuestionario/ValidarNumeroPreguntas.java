@@ -15,7 +15,9 @@ import java.util.List;
 public class ValidarNumeroPreguntas {
     public static void  validarNumeroDePreguntas (List<Pregunta> preguntas) throws NumeroDePreguntaException{
         
-    
+    if(opcion<10) {
+       throw new NumberFormatException ();
+   }
        //  if(preguntas.length>10);
         
     }
